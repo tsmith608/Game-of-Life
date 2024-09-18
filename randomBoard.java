@@ -49,7 +49,10 @@ public class randomBoard {
             System.out.println();
             System.out.print("|");
             for (int j = 0; j < board[i].length; j++) {
-                System.out.print(board[i][j]);
+                if (board[i][j] == 1)
+                System.out.print("X");
+                else if (board[i][j] == 0)
+                    System.out.print(" ");
                 if (j == board[i].length - 1)
                     System.out.print("|");
 
